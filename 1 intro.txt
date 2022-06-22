@@ -1,0 +1,175 @@
+
+What is Version control?
+
+A version control system (VCS) is a program or set of programs that tracks changes to a collection of files.
+
+See all the changes made to your project, when the changes were made, and who made them.
+Include a message with each change to explain the reasoning behind it.
+Retrieve past versions of the entire project or of individual files.
+Create branches, where changes can be made experimentally.
+
+
+Distributed version control:
+
+Git is distributed, which means that a project's complete history is stored both on the client and on the server. 
+You can edit files without a network connection, check them in locally, 
+and sync with the server when a connection becomes available. 
+If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server.
+
+
+Local Version Control Systems:
+
+It is done just by copying all the files into another directory. This is a simple approach
+
+disavdantages:
+1) This approach is err prone
+2) Here all developers cant collaborate
+
+Centralized Version Control Systems:
+
+These systems have a single server that contains all the versioned files, and a number of clients 
+that check out files from that central place.
+
+disadvantages:
+1) if there is any failure in the server for 1 hr then at that time nobody can collaborate 
+and work on the latest version
+2)  If the hard disk the central database is on becomes corrupted, 
+and proper backups haven’t been kept, you lose absolutely everything, entire history 
+gets deleted.
+
+Distributed Version Control Systems:
+
+clients don’t just check out the latest snapshot of the files; rather, 
+they fully mirror the repository, including its full history.
+Every clone is really a full backup of all the data.
+
+
+
+Branch
+A branch is a version of the repository that diverges from the main working project.
+
+Checkout
+In Git, the term checkout is used for the act of switching between different versions of a target entity. 
+The git checkout command is used to switch between branches in a repository.
+
+
+Cherry-Picking
+Cherry-picking in Git is meant to apply some commit from one branch into another branch. 
+In case you made a mistake and committed a change into the wrong branch, but do not want to merge the whole branch. 
+You can revert the commit and cherry-pick it on another branch.
+
+
+Clone
+The git clone is a Git command-line utility. It is used to make a copy of the target repository or clone it.
+
+Fetch
+It is used to fetch branches and tags from one or more other repositories
+
+HEAD
+HEAD is the representation of the last commit in the current checkout branch.
+
+Index
+The Git index is a staging area between the working directory and repository. 
+
+Merge
+Merging is a process to put a forked history back together.
+
+Origin
+In Git, "origin" is a reference to the remote repository from a project was initially cloned.
+
+Pull/Pull Request
+The term Pull is used to receive data from GitHub. It fetches and merges changes on the remote server to your working directory. 
+
+Push
+The push term refers to upload local repository content to a remote repository. 
+
+Rebase:
+Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+link:
+https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase#:~:text=What%20is%20git%20rebase%3F,of%20a%20feature%20branching%20workflow.
+
+Remote
+In Git, the term remote is concerned with the remote repository.
+
+Repository
+In Git, Repository is like a data structure used by VCS to store metadata for a set of files and directories.
+
+Stashing
+Sometimes you want to switch the branches, but you are working on an incomplete part of your current project. 
+You don't want to make a commit of half-done work. Git stashing allows you to do so. 
+The git stash command enables you to switch branch without committing the current branch.
+
+Tag
+Tags make a point as a specific point in Git history.
+
+Upstream And Downstream
+The term upstream and downstream is a reference of the repository. 
+Generally, upstream is where you cloned the repository from (the origin) and 
+downstream is any project that integrates your work with other works.
+
+Git Revert
+In Git, the term revert is used to revert some commit. 
+
+Git Reset
+In Git, the term reset stands for undoing changes.
+
+Git Ignore
+In Git, the term ignore used to specify intentionally untracked files that Git should ignore.
+
+Git Diff
+It is used to show changes between commits, commit, and working tree, etc.
+
+Git Squash
+In Git, the term squash is used to squash previous commits into one.
+
+Git Rm
+In Git, the term rm stands for remove. It is used to remove individual files or a collection of files.
+
+Git Fork
+A fork is a rough copy of a repository. Forking a repository allows you to freely test and debug with 
+changes without affecting the original project.
+
+
+
+
+Git Commands:
+link: https://www.javatpoint.com/git-commands
+
+
+Centralized workflow:
+the Centralized Workflow uses a central repository to serve as the single point-of-entry for all changes to the project. 
+Instead of trunk, the default development branch is called main and all changes are committed into this branch. 
+This workflow doesn’t require any other branches besides main.
+
+
+Feature branching
+Feature Branching is a logical extension of Centralized Workflow. 
+The core idea behind the Feature Branch Workflow is that all feature development should take place in a 
+dedicated branch instead of the main branch. This encapsulation makes it easy for multiple developers to work 
+on a particular feature without disturbing the main codebase. It also means the main branch should never 
+contain broken code, which is a huge advantage for continuous integration environments. 
+
+
+Forking Workflow
+The Forking Workflow is fundamentally different than the other workflows discussed in this tutorial. 
+Instead of using a single server-side repository to act as the “central” codebase, 
+it gives every developer a server-side repository. This means that each contributor has not one, 
+but two Git repositories: a private local one and a public server-side one.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
