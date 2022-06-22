@@ -1,5 +1,9 @@
 <xml>
+<<<<<<< HEAD
     <main>
         <data>data</data>
     </main>
+=======
+    <hello>data</hello>
+>>>>>>> GitWork
 </xml>
