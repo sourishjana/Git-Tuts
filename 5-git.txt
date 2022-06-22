@@ -1,0 +1,24 @@
+Sourish@DESKTOP-DJ3D3T0 MINGW64 /f/GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sourish@DESKTOP-DJ3D3T0 MINGW64 /f/GIT (main)
+$ git branch
+* main
+
+Sourish@DESKTOP-DJ3D3T0 MINGW64 /f/GIT (main)
+$ git add .
+
+Sourish@DESKTOP-DJ3D3T0 MINGW64 /f/GIT (main)
+$ git commit -m "conflict resolved"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Sourish@DESKTOP-DJ3D3T0 MINGW64 /f/GIT (main)
+$ git push origin main
+Everything up-to-date
