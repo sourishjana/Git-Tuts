@@ -161,7 +161,10 @@ but two Git repositories: a private local one and a public server-side one.
 
 
 
+NOTE:
 
+Always use 
+(git bash) and (vs code) for git works. 
 
 
 
